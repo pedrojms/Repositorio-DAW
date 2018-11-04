@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+
+div#contenedor{
+	float:right;
+
+}
+
+
+div[id^="cuadro"]{
+	display:inline-block;
+
+
+	height: 144px;
+	width: 120px;
+	border: 2pt #606060 solid;
+	border-radius: 10px;
+	text-indent: 17px;
+	margin-right: 17px;
+}
+
+p{
+	text-indent: 17px;
+	font-family: "Baloo";
+	font-size: 36px;
+}
+
+div#cuadro1, div#cuadro3{
+	background-color: #dfedd6;
+}
+
+div#cuadro2, div#cuadro4{
+	background-color: #f7fade;
+}
