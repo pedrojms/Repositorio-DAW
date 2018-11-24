@@ -5,7 +5,7 @@ function loadXml() {
       dataType: "xml",
       success: function(xml){
           $(xml).find('item').each(function(){
-            var user = $(this).find('dc:creator').text();
+            var user = $(this).find('creator').text();
             var perfil = $(xml).find('url').text();
             var descripcion = $(this).find('description').text();
             var url = $(this).find('link').text();
@@ -61,6 +61,7 @@ function addTweet(autor, perfil, descripcion, url, fecha) {
 $(document).ready(function(){
   
 	loadXml();
+  $("#tweets").hide();
   
 
   $("button").click(function(e){
@@ -81,13 +82,16 @@ $(document).ready(function(){
         }
 
       });
+      $("#tweets").show();
 
     } else {
-      $('#tweet .tweet').each(function(){
-        $(this).show();
-      });
+      $('#tweets').hide();
+      
     }
+    
 
     
   })
+
+
 });
