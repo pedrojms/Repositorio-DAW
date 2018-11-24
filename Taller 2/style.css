@@ -1,0 +1,27 @@
+img.col-1{
+	height:100%;
+	
+}
+
+div#texto{
+	background-color:blue;
+	text-align:center;
+}
+
+div#tweets{
+	border:1pt solid;
+
+}
+
+div[class^="tweet"]{
+	border-bottom:1pt solid;
+}
+
+p[class^="fecha"]{
+	text-align: right;
+}
+
+p > img{
+	display:block;
+	margin:auto;
+}
